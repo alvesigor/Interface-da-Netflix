@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;1,700&family=MedievalSharp&display=swap);
+
+:root {
+    --cor_1: #151B26;
+    --cor_2: #587AA6;
+    --cor_3: #79ACD9;
+    --cor_4: #A2D4F2;
+    --cor_5: #C4EAF2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elemento base*/
+body {
+    background: var(--cor_1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+}
+
+header .container {
+    background-color: var(--cor_2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--cor_3);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor_5);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--cor_2)
+}
+
+/*livro principal*/
+.livro-principal {
+    margin-top: 10px;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-livro1-thewitcher.jpg');
+
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    font-family: Almendra;
+}
+.livro-principal .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70%;
+}
+.livro-principal .sinopse {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.livro-principal .book-title {
+    margin-top: 10%;
+    font-size: 40px;
+}
+.botoes {
+    margin-bottom: 50px;
+}
+.button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: var(--cor_2);
+    color: var(--cor_1);
+}
+
+.button i {
+    margin-right: 5px;
+}
+
+.box-livro {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-livros {
+    margin-top: 10px;
+}
